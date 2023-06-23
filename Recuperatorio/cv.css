@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Spectral&display=swap');
+
+@font-face {
+  font-family: 'kawaii-stitch';
+  src: url(kawaii-Stitch.ttf);
+}
+
+#fonttitle {
+  font-family: kawaii-stitch;
+}
+#Datos-Personales {
+  margin-left: 32%;
+}
+
+
+body {
+  font-family: 'Spectral', serif;
+  color: rgb(0, 0, 0);
+  border-style: dotted;
+  margin-left: 20px;
+  border-color: brown;
+  border-width: 5px;
+  border-start-end-radius: 50px;
+  border-start-start-radius: 50px;
+  padding: 10px;
+  text-align: center;
+  background-image: url("imagenes/sakura.gif");
+  cursor: url('imagenes/cursor1.cur'), auto;
+}
+
+h3 {
+
+  -webkit-text-fill-color: #fac9c9;
+  text-decoration: underline;
+  text-decoration-color: #d2afff;
+}
+
+
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+
+}
+
+.marquee {
+  font-family: 'Cute Font', cursive;
+  font-size: xx-large;
+  max-width: 300px;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  padding-left: 43%;
+}
+
+.video {
+  max-width: 30%;
+}
+
+.a {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.a:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.a:active {
+  color: #000000
+}
+
+.a:active:after {
+  background: transparent;
+}
+
+.a:hover:before {
+  opacity: 1;
+}
+
+.a:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fac9c9;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.container {
+  float: left;
+  max-width: fit-content;
+  padding-left: 130px;
+}
+
+ul.menu {
+  font-family: 'Cute Font', cursive;
+  font-size: x-large;
+  text-align: left;
+  width: 120px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #7C7C7C;
+}
+
+ul.menu li {
+  border-bottom: 1px solid #7C7C7C;
+  border-top: 1px solid #FFF;
+  background: #F4F4F4;
+}
+
+ul.menu li a {
+  padding: .2em 0 .2em 1.3em;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  background: #fac9c9 3px;
+}
+
+.cuadro {
+  position: initial;
+  width: 350px;
+  margin: auto;
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: rgb(227, 206, 252);
+  height: 100px;
+  background-image: url("imagenes/fondo-pintado-acuarela-pastel_23-2148959636.jpg");
+  background-size: cover;
+  background-size: no-repeat;
+  background-position: center center;
+  border-style: dashed;
+  text-align: left;
+  padding-top: 0px;
+}
+
+form {
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 420px;
+  padding: 0 15px;
+  margin: 15px auto 50px;
+}
+
+.form-field,
+.form-submit {
+  color: inherit;
+  display: block;
+  position: relative;
+  z-index: 1;
+  font-size: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: white;
+  padding: 12px 15px;
+  min-height: 3rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+label.movable {
+  top: -1.5rem;
+  height: 1rem;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0;
+}
+
+.form-submit {
+  background: #df6bd9;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: 0;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
